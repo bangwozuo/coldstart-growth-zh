@@ -1,0 +1,56 @@
+name: 出海增长官
+repo: bangwozuo/coldstart-growth-zh
+legacy_name: 出海冷启动获客官（Build-in-Public 内容引擎）
+version: 0.2.0
+asset_type: prompt-only
+stage: P0
+complexity: M（连接器为主），P0 首发
+group: OPC
+runtime_dependencies: none
+api_key_required: false
+demand_ids:
+  - D01
+  - D11
+  - D22
+  - D28
+
+workflows:
+  - name: 每日选题挖掘
+    id: de_dev_01_wf01
+  - name: 开发日志转内容
+    id: de_dev_01_wf02
+  - name: 一稿多平台适配
+    id: de_dev_01_wf03
+  - name: 发布排期
+    id: de_dev_01_wf04
+  - name: 数据驱动选题迭代
+    id: de_dev_01_wf05
+
+skills:
+  - id: community-post-insight
+    name: 社区热帖洞察
+    family: 
+  - id: painpoint-sellingpoint-match
+    name: 痛点卖点匹配
+    family: 
+  - id: narrative-rewrite
+    name: 叙事改写
+    family: 
+  - id: platform-format-adapt
+    name: 平台格式适配
+    family: 
+  - id: hashtag-optimize
+    name: 话题标签优化
+    family: 
+  - id: publish-schedule
+    name: 发布排期
+    family: 
+  - id: weekly-data-review
+    name: 周度数据复盘
+    family: 
+
+compliance:
+  ai_label_required: true
+  human_review_required: true
+  forbidden_words_check: true
+  official_api_only: true

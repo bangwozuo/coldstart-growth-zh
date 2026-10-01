@@ -1,0 +1,58 @@
+{
+  "workflow_id": "de_dev_01_wf04",
+  "name": "发布排期",
+  "type": "composite",
+  "input": {
+    "type": "object",
+    "required": ["week_start", "items"],
+    "properties": {
+      "week_start": {"type": "string", "description": "排期周起始日（ISO 日期，周一）"},
+      "audience_tz": {"type": "string", "description": "目标受众时区，默认 America/Los_Angeles"},
+      "account_state": {
+        "type": "object",
+        "description": "账号参与比状态：reddit_last_10_selfpromo / x_last_10_selfpromo（近 10 条中自推条数）"
+      },
+      "items": {
+        "type": "array",
+        "description": "待发布条目：title / platforms（支持 Reddit:r/xxx）/ selfpromo / material_ready / missing",
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": {"type": "string"},
+            "platforms": {"type": "array"},
+            "selfpromo": {"type": "boolean"},
+            "material_ready": {"type": "boolean"},
+            "missing": {"type": "string"}
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "type": "object",
+    "required": ["schedule", "conflicts"],
+    "properties": {
+      "schedule": {
+        "type": "array",
+        "description": "周排期表：日期/时间/平台/内容/前置条件/状态（✅ 可执行 ⏳ 待备料 🛑 拒绝排入）/人工确认点"
+      },
+      "conflicts": {
+        "type": "array",
+        "description": "冲突与处理：PH 邻日自推 / 同 sub 间隔 <3 天自动顺延 / 撞大版本日"
+      },
+      "artifacts": {
+        "type": "array",
+        "description": "out/发布排期表.xlsx、out/schedule_flow_result.json"
+      }
+    },
+    "x-scripts": ["scripts/run_flow.py"],
+    "x-orchestrates": ["de_dev_01_sk04", "de_dev_01_sk06"]
+  },
+  "constraints": {
+    "max_input_length": 8000,
+    "forbidden_words": ["最好", "第一", "100%"],
+    "ai_label_required": true,
+    "human_review_required": true,
+    "no_platform_write": true
+  }
+}

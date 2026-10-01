@@ -1,0 +1,47 @@
+{
+  "skill_id": "de_dev_01_sk03",
+  "name": "叙事改写",
+  "type": "atomic",
+  "input": {
+    "type": "object",
+    "required": ["content", "platform"],
+    "properties": {
+      "content": {
+        "type": "string",
+        "description": "原始 devlog（技术视角日志）"
+      },
+      "platform": {
+        "type": "string",
+        "description": "X/Twitter / Reddit r/SideProject / Reddit r/SaaS / Indie Hackers / dev.to"
+      },
+      "metrics": {
+        "type": "object",
+        "description": "本周真实数据（用户数/MRR/星标等）；仅输入的数字会出现在成稿中"
+      }
+    }
+  },
+  "output": {
+    "type": "object",
+    "required": ["adapted_content", "constraints_checked"],
+    "properties": {
+      "adapted_content": {
+        "type": "string",
+        "description": "成稿正文（钩子/冲突/尝试/结果/提问五段式）"
+      },
+      "changes": {
+        "type": "array",
+        "description": "改动说明：原文技术视角 → 改写后用户视角 → 理由"
+      },
+      "constraints_checked": {
+        "type": "object",
+        "description": "约束核对：钩子含具体细节 / 非必要术语≤2个每百字 / 数字无新增 / 结尾提问 / 平台形态上限"
+      }
+    }
+  },
+  "constraints": {
+    "max_input_length": 8000,
+    "forbidden_words": ["最好", "第一", "100%"],
+    "ai_label_required": true,
+    "human_review_required": true
+  }
+}

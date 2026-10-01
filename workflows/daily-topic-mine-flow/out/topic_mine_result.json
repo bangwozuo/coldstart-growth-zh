@@ -1,0 +1,135 @@
+{
+  "summary": {
+    "数据来源": "r/SaaS + r/SideProject + r/indiehackers",
+    "时间窗口": "近 7 天",
+    "帖子总数": 13,
+    "痛点吐槽": 6,
+    "功能求助": 2,
+    "竞品流失": 2,
+    "自推晒作": 2,
+    "闲聊噪音": 1,
+    "可参与目标帖": 8,
+    "自推额度核算": "今日如有 1 条自推需求，需先完成 ≥9 条非自推参与（9:1 规则）",
+    "高频痛点主题": "上手门槛、定价、性能、移动端、隐私安全、集成导出",
+    "说明": "分类/热度为词表机器判定；动机判断与跟帖话术由模型按 prompt.txt 复核，发帖动作保留人工确认",
+    "入选选题数": 1,
+    "观察池主题数": 4
+  },
+  "topic_cards": [
+    {
+      "主题": "上手门槛",
+      "证据帖数": 3,
+      "总热度": 341.0,
+      "证据链": "[{\"id\": \"P005\", \"sub\": \"r/SaaS\", \"heat\": 120.0, \"url\": \"reddit.com/r/SaaS/comments/aa5\"}, {\"id\": \"P013\", \"sub\": \"r/SaaS\", \"heat\": 119.0, \"url\": \"reddit.com/r/SaaS/comments/aa13\"}, {\"id\": \"P014\", \"sub\": \"r/indiehackers\", \"heat\": 102.0, \"url\": \"reddit.com/r/indiehackers/comments/aa14\"}]",
+      "建议角度": "痛点瞬间角度：抓配置/接入卡住的具体时刻",
+      "下一步": "交 painpoint-sellingpoint-match 生成钩子候选",
+      "判定": "✅ 入选（3 帖 ≥ 3 帖门槛）"
+    }
+  ],
+  "watchlist": [
+    {
+      "主题": "定价",
+      "证据帖数": 2,
+      "总热度": 592.2,
+      "证据链": "[{\"id\": \"P007\", \"sub\": \"r/indiehackers\", \"heat\": 463.2, \"url\": \"reddit.com/r/indiehackers/comments/aa7\"}, {\"id\": \"P012\", \"sub\": \"r/indiehackers\", \"heat\": 129.0, \"url\": \"reddit.com/r/indiehackers/comments/aa12\"}]",
+      "建议角度": "成本账角度：把定价痛换算成用户的时间/金钱账",
+      "下一步": "交 painpoint-sellingpoint-match 生成钩子候选",
+      "判定": "⚠ 观察池（2 帖 < 3 帖门槛，单帖不成选题）"
+    },
+    {
+      "主题": "隐私安全",
+      "证据帖数": 1,
+      "总热度": 247.0,
+      "证据链": "[{\"id\": \"P009\", \"sub\": \"r/indiehackers\", \"heat\": 247.0, \"url\": \"reddit.com/r/indiehackers/comments/aa9\"}]",
+      "建议角度": "反共识角度：小团队也能做好合规的具体清单",
+      "下一步": "交 painpoint-sellingpoint-match 生成钩子候选",
+      "判定": "⚠ 观察池（1 帖 < 3 帖门槛，单帖不成选题）"
+    },
+    {
+      "主题": "性能",
+      "证据帖数": 1,
+      "总热度": 64.0,
+      "证据链": "[{\"id\": \"P010\", \"sub\": \"r/SideProject\", \"heat\": 64.0, \"url\": \"reddit.com/r/SideProject/comments/aa10\"}]",
+      "建议角度": "前后对比角度：等待秒数从 X 到 Y（须真实实测）",
+      "下一步": "交 painpoint-sellingpoint-match 生成钩子候选",
+      "判定": "⚠ 观察池（1 帖 < 3 帖门槛，单帖不成选题）"
+    },
+    {
+      "主题": "移动端",
+      "证据帖数": 1,
+      "总热度": 64.0,
+      "证据链": "[{\"id\": \"P010\", \"sub\": \"r/SideProject\", \"heat\": 64.0, \"url\": \"reddit.com/r/SideProject/comments/aa10\"}]",
+      "建议角度": "痛点瞬间角度：用户在移动场景卡住的那一下",
+      "下一步": "交 painpoint-sellingpoint-match 生成钩子候选",
+      "判定": "⚠ 观察池（1 帖 < 3 帖门槛，单帖不成选题）"
+    }
+  ],
+  "join_queue": [
+    {
+      "帖子ID": "P001",
+      "sub": "r/SaaS",
+      "类别": "痛点吐槽",
+      "热度档": "🔥 热 · 讨论型",
+      "URL": "reddit.com/r/SaaS/comments/aa1",
+      "参与建议": "高价值目标：以「同行+同样遇到」口吻参与讨论，本条不贴任何链接（计入 9 条非自推）"
+    },
+    {
+      "帖子ID": "P009",
+      "sub": "r/indiehackers",
+      "类别": "痛点吐槽",
+      "热度档": "🔥 热 · 讨论型",
+      "URL": "reddit.com/r/indiehackers/comments/aa9",
+      "参与建议": "高价值目标：以「同行+同样遇到」口吻参与讨论，本条不贴任何链接（计入 9 条非自推）"
+    },
+    {
+      "帖子ID": "P003",
+      "sub": "r/SideProject",
+      "类别": "痛点吐槽",
+      "热度档": "🌤 温 · 讨论型",
+      "URL": "reddit.com/r/SideProject/comments/aa3",
+      "参与建议": "高价值目标：以「同行+同样遇到」口吻参与讨论，本条不贴任何链接（计入 9 条非自推）"
+    },
+    {
+      "帖子ID": "P013",
+      "sub": "r/SaaS",
+      "类别": "痛点吐槽",
+      "热度档": "🌤 温 · 讨论型",
+      "URL": "reddit.com/r/SaaS/comments/aa13",
+      "参与建议": "高价值目标：以「同行+同样遇到」口吻参与讨论，本条不贴任何链接（计入 9 条非自推）"
+    },
+    {
+      "帖子ID": "P014",
+      "sub": "r/indiehackers",
+      "类别": "痛点吐槽",
+      "热度档": "🌤 温 · 讨论型",
+      "URL": "reddit.com/r/indiehackers/comments/aa14",
+      "参与建议": "高价值目标：以「同行+同样遇到」口吻参与讨论，本条不贴任何链接（计入 9 条非自推）"
+    },
+    {
+      "帖子ID": "P010",
+      "sub": "r/SideProject",
+      "类别": "痛点吐槽",
+      "热度档": "🌤 温 · 讨论型",
+      "URL": "reddit.com/r/SideProject/comments/aa10",
+      "参与建议": "高价值目标：以「同行+同样遇到」口吻参与讨论，本条不贴任何链接（计入 9 条非自推）"
+    },
+    {
+      "帖子ID": "P007",
+      "sub": "r/indiehackers",
+      "类别": "功能求助",
+      "热度档": "🔥 热 · 讨论型",
+      "URL": "reddit.com/r/indiehackers/comments/aa7",
+      "参与建议": "最高价值：给出真实可用的方案或手动做法；若确有产品可解决，先问再提，披露开发者身份"
+    },
+    {
+      "帖子ID": "P004",
+      "sub": "r/indiehackers",
+      "类别": "功能求助",
+      "热度档": "🔥 热 · 讨论型",
+      "URL": "reddit.com/r/indiehackers/comments/aa4",
+      "参与建议": "最高价值：给出真实可用的方案或手动做法；若确有产品可解决，先问再提，披露开发者身份"
+    }
+  ],
+  "generated_at": "2026-09-30 17:20:23",
+  "note": "选题判定的证据链均来自上游 insight.json，未新增任何帖子"
+}

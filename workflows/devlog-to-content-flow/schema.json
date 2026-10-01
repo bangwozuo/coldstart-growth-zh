@@ -1,0 +1,50 @@
+{
+  "workflow_id": "de_dev_01_wf02",
+  "name": "开发日志转内容",
+  "type": "composite",
+  "input": {
+    "type": "object",
+    "required": ["devlog"],
+    "properties": {
+      "devlog": {"type": "string", "description": "开发日志原文（技术视角）"},
+      "metrics": {
+        "type": "object",
+        "description": "本周真实数据（用户数/MRR/星标）；成稿仅允许出现日志原文与 metrics 中的数字"
+      },
+      "platforms": {
+        "type": "array",
+        "description": "目标平台：X/Twitter / Reddit r/SideProject / Indie Hackers / dev.to"
+      }
+    }
+  },
+  "output": {
+    "type": "object",
+    "required": ["checks", "platform_specs"],
+    "properties": {
+      "checks": {
+        "type": "array",
+        "description": "素材门槛检查：数字溯源 / 绝对词扫描 / 失败细节 / 术语清单"
+      },
+      "angles": {
+        "type": "array",
+        "description": "钩子角度工单：痛点瞬间 / 前后对比 / 身份共鸣（引自 painpoint-sellingpoint-match）"
+      },
+      "platform_specs": {
+        "type": "array",
+        "description": "逐平台五段式骨架与形态上限（引自 narrative-rewrite）"
+      },
+      "artifacts": {
+        "type": "array",
+        "description": "out/devlog叙事改写工单.xlsx、out/devlog_flow_result.json"
+      }
+    },
+    "x-scripts": ["scripts/run_flow.py"],
+    "x-orchestrates": ["de_dev_01_sk02", "de_dev_01_sk03"]
+  },
+  "constraints": {
+    "max_input_length": 8000,
+    "forbidden_words": ["最好", "第一", "100%"],
+    "ai_label_required": true,
+    "human_review_required": true
+  }
+}

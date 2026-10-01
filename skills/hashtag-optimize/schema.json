@@ -1,0 +1,66 @@
+{
+  "skill_id": "de_dev_01_sk05",
+  "name": "话题标签优化",
+  "type": "atomic",
+  "input": {
+    "type": "object",
+    "required": ["platform", "content", "tag_pool"],
+    "properties": {
+      "platform": {
+        "type": "string",
+        "description": "X/Twitter / TikTok / 小红书 / Instagram / Product Hunt / 通用"
+      },
+      "content": {
+        "type": "string",
+        "description": "待发布文案（用于相关度计算）"
+      },
+      "tag_pool": {
+        "type": "array",
+        "description": "候选标签快照（平台标签页或第三方工具导出），每条含 tag/posts_per_week/avg_engagement",
+        "items": {
+          "type": "object",
+          "properties": {
+            "tag": {"type": "string"},
+            "posts_per_week": {"type": "number"},
+            "avg_engagement": {"type": "number"}
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "type": "object",
+    "required": ["combo", "evals"],
+    "properties": {
+      "combo": {
+        "type": "array",
+        "description": "推荐标签组合（按层配比：大借曝光 / 中做性价比 / 小保精准）"
+      },
+      "evals": {
+        "type": "array",
+        "description": "逐标签评估：层级 / 相关度 / 适配分（0-100）/ 判定",
+        "items": {
+          "type": "object",
+          "properties": {
+            "标签": {"type": "string"},
+            "层级": {"type": "string", "description": "大 ≥5000 / 中 500-5000 / 小 <500 帖/周"},
+            "相关度": {"type": "number"},
+            "适配分": {"type": "number"},
+            "判定": {"type": "string"}
+          }
+        }
+      },
+      "artifacts": {
+        "type": "array",
+        "description": "out/标签组合清单.xlsx、out/标签分数分布.png、out/tags.json"
+      }
+    },
+    "x-scripts": ["scripts/tag_score.py"]
+  },
+  "constraints": {
+    "max_input_length": 10000,
+    "forbidden_words": ["最好", "第一", "100%"],
+    "ai_label_required": true,
+    "human_review_required": true
+  }
+}

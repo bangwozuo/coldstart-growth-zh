@@ -1,0 +1,66 @@
+{
+  "platform": "X/Twitter",
+  "content": "Shipping v2 of my churn analytics SaaS today. Weekly cohort view, Stripe sync, and a plain-English churn report for solo founders building in public.",
+  "tag_pool": [
+    {
+      "tag": "#buildinpublic",
+      "posts_per_week": 8200,
+      "avg_engagement": 96
+    },
+    {
+      "tag": "#SaaS",
+      "posts_per_week": 42000,
+      "avg_engagement": 51
+    },
+    {
+      "tag": "#indiehacker",
+      "posts_per_week": 1900,
+      "avg_engagement": 88
+    },
+    {
+      "tag": "#microsaas",
+      "posts_per_week": 2400,
+      "avg_engagement": 105
+    },
+    {
+      "tag": "#solofounder",
+      "posts_per_week": 950,
+      "avg_engagement": 72
+    },
+    {
+      "tag": "#churn",
+      "posts_per_week": 380,
+      "avg_engagement": 130
+    },
+    {
+      "tag": "#stripe",
+      "posts_per_week": 1500,
+      "avg_engagement": 64
+    },
+    {
+      "tag": "#startup",
+      "posts_per_week": 150000,
+      "avg_engagement": 30
+    },
+    {
+      "tag": "#devtools",
+      "posts_per_week": 5600,
+      "avg_engagement": 45
+    },
+    {
+      "tag": "#cohortanalysis",
+      "posts_per_week": 90,
+      "avg_engagement": 41
+    },
+    {
+      "tag": "#coffee",
+      "posts_per_week": 480000,
+      "avg_engagement": 210
+    },
+    {
+      "tag": "#launchday",
+      "posts_per_week": 1100,
+      "avg_engagement": 58
+    }
+  ]
+}

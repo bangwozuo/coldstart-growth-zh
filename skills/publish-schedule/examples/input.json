@@ -1,0 +1,13 @@
+{
+  "week_start": "2026-10-05",
+  "audience_tz": "America/Los_Angeles",
+  "account_state": {
+    "reddit_last_10_selfpromo": 1,
+    "x_last_10_selfpromo": 2
+  },
+  "items": [
+    {"title": "ChurnLens PH Launch（v0.9 正式发布）", "platforms": ["Product Hunt"], "material_ready": false, "missing_material": "demo 视频（60 秒内）"},
+    {"title": "v0.9 devlog（缓存重构故事）", "platforms": ["Reddit r/SideProject", "X/Twitter"], "material_ready": true},
+    {"title": "流失分析教程长文", "platforms": ["Indie Hackers"], "material_ready": true}
+  ]
+}

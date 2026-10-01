@@ -1,0 +1,63 @@
+{
+  "skill_id": "de_dev_01_sk07",
+  "name": "周度数据复盘",
+  "type": "atomic",
+  "input": {
+    "type": "object",
+    "required": ["week", "ltv", "channels"],
+    "properties": {
+      "week": {"type": "string", "description": "复盘周，如 2026-W40"},
+      "ltv": {"type": "number", "description": "用户 LTV（¥）；估算须注明口径，缺失时脚本拒绝执行"},
+      "channels": {
+        "type": "array",
+        "description": "渠道列表（UTM/引荐域归因后），每条含 name/spend/impressions/clicks/signups/activated/paying/revenue",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {"type": "string"},
+            "spend": {"type": "number"},
+            "impressions": {"type": "number"},
+            "clicks": {"type": "number"},
+            "signups": {"type": "number"},
+            "activated": {"type": "number"},
+            "paying": {"type": "number"},
+            "revenue": {"type": "number"}
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "type": "object",
+    "required": ["channels", "summary"],
+    "properties": {
+      "channels": {
+        "type": "array",
+        "description": "逐渠道明细：各级转化率 / CAC / ROAS / 漏斗体检 / 判定（保留/整改/停投）"
+      },
+      "funnel_check": {
+        "type": "array",
+        "description": "漏斗基准体检：CTR 2-5% / 落地页→注册 8-15% / 注册→激活 20-40%"
+      },
+      "actions": {
+        "type": "array",
+        "description": "下周行动表：渠道 / 行动 / 预算"
+      },
+      "summary": {
+        "type": "object",
+        "description": "保留/停投渠道、整体 CAC、判定线（LTV/3）、试错纪律"
+      },
+      "artifacts": {
+        "type": "array",
+        "description": "out/周度复盘报告.xlsx、out/渠道漏斗对比.png、out/review.json"
+      }
+    },
+    "x-scripts": ["scripts/weekly_review.py"]
+  },
+  "constraints": {
+    "max_input_length": 10000,
+    "forbidden_words": ["最好", "第一", "100%"],
+    "ai_label_required": true,
+    "human_review_required": true
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "skill_id": "de_dev_01_sk02",
+  "name": "痛点卖点匹配",
+  "type": "atomic",
+  "input": {
+    "type": "object",
+    "required": ["brief"],
+    "properties": {
+      "brief": {
+        "type": "string",
+        "description": "产品简述：功能清单 + 可兑现的效果数据（实测口径）"
+      },
+      "painpoints": {
+        "type": "array",
+        "description": "社区痛点原话（来自 community-post-insight 的产出）"
+      },
+      "platform": {
+        "type": "string",
+        "description": "用途场景：X / Reddit 评论 / 落地页 / devlog"
+      }
+    }
+  },
+  "output": {
+    "type": "object",
+    "required": ["hooks", "pairs"],
+    "properties": {
+      "hooks": {
+        "type": "array",
+        "description": "钩子候选，按五种角度分组：痛点瞬间 / 前后对比 / 身份共鸣 / 反共识 / 成本账"
+      },
+      "pairs": {
+        "type": "array",
+        "description": "痛点-功能配对表（含错配弃用判定）"
+      },
+      "self_check": {
+        "type": "array",
+        "description": "逐条自检：长度≤90字符（落地页≤20字）/ 具体度 / 兑现度 / 合规，与弃用原因"
+      }
+    }
+  },
+  "constraints": {
+    "max_input_length": 8000,
+    "forbidden_words": ["最好", "第一", "100%"],
+    "ai_label_required": true,
+    "human_review_required": true
+  }
+}

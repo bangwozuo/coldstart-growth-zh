@@ -1,0 +1,123 @@
+{
+  "source": "r/SaaS + r/SideProject + r/indiehackers",
+  "window_days": 7,
+  "posts": [
+    {
+      "id": "P001",
+      "subreddit": "r/SaaS",
+      "title": "Struggling with churn - users sign up, never come back after day 3. What am I doing wrong?",
+      "ups": 187,
+      "num_comments": 96,
+      "age_hours": 20,
+      "url": "reddit.com/r/SaaS/comments/aa1"
+    },
+    {
+      "id": "P002",
+      "subreddit": "r/SaaS",
+      "title": "I built a churn analytics tool and just launched on Product Hunt today - feedback wanted",
+      "ups": 42,
+      "num_comments": 11,
+      "age_hours": 9,
+      "url": "reddit.com/r/SaaS/comments/aa2"
+    },
+    {
+      "id": "P003",
+      "subreddit": "r/SideProject",
+      "title": "Anyone else hate configuring webhooks? Spent 5 hours debugging one today",
+      "ups": 96,
+      "num_comments": 38,
+      "age_hours": 30,
+      "url": "reddit.com/r/SideProject/comments/aa3"
+    },
+    {
+      "id": "P004",
+      "subreddit": "r/indiehackers",
+      "title": "Is there a tool that turns Stripe invoices into a simple monthly P&L? Would pay for this",
+      "ups": 154,
+      "num_comments": 52,
+      "age_hours": 46,
+      "url": "reddit.com/r/indiehackers/comments/aa4"
+    },
+    {
+      "id": "P005",
+      "subreddit": "r/SaaS",
+      "title": "Switched from Intercom to a cheaper helpdesk - onboarding docs were the real cost",
+      "ups": 88,
+      "num_comments": 31,
+      "age_hours": 80,
+      "url": "reddit.com/r/SaaS/comments/aa5"
+    },
+    {
+      "id": "P006",
+      "subreddit": "r/SideProject",
+      "title": "Just shipped v2 of my side project, roast my landing page",
+      "ups": 25,
+      "num_comments": 18,
+      "age_hours": 15,
+      "url": "reddit.com/r/SideProject/comments/aa6"
+    },
+    {
+      "id": "P007",
+      "subreddit": "r/indiehackers",
+      "title": "Pricing my first SaaS at $9/mo feels wrong - how do you decide pricing?",
+      "ups": 210,
+      "num_comments": 88,
+      "age_hours": 12,
+      "url": "reddit.com/r/indiehackers/comments/aa7"
+    },
+    {
+      "id": "P008",
+      "subreddit": "r/SaaS",
+      "title": "PSA: export your data before your tool shuts down (again)",
+      "ups": 61,
+      "num_comments": 24,
+      "age_hours": 100,
+      "url": "reddit.com/r/SaaS/comments/aa8"
+    },
+    {
+      "id": "P009",
+      "subreddit": "r/indiehackers",
+      "title": "Why is GDPR compliance so painful for a one-person EU startup?",
+      "ups": 133,
+      "num_comments": 57,
+      "age_hours": 55,
+      "url": "reddit.com/r/indiehackers/comments/aa9"
+    },
+    {
+      "id": "P010",
+      "subreddit": "r/SideProject",
+      "title": "My app is slow on mobile, anyone dealt with this? Lag on every scroll",
+      "ups": 34,
+      "num_comments": 15,
+      "age_hours": 28,
+      "url": "reddit.com/r/SideProject/comments/aa10"
+    },
+    {
+      "id": "P012",
+      "subreddit": "r/indiehackers",
+      "title": "Just cancelled my Calendly subscription, moved away from seat-based pricing tools",
+      "ups": 71,
+      "num_comments": 29,
+      "age_hours": 66,
+      "url": "reddit.com/r/indiehackers/comments/aa12"
+    },
+    {
+      "id": "P013",
+      "subreddit": "r/SaaS",
+      "title": "Setup wizard is too confusing - 40% drop off at step 2 of onboarding",
+      "ups": 65,
+      "num_comments": 27,
+      "age_hours": 40,
+      "url": "reddit.com/r/SaaS/comments/aa13"
+    },
+    {
+      "id": "P014",
+      "subreddit": "r/indiehackers",
+      "title": "Learning curve too steep: gave up configuring self-hosted analytics after a weekend",
+      "ups": 58,
+      "num_comments": 22,
+      "age_hours": 62,
+      "url": "reddit.com/r/indiehackers/comments/aa14"
+    }
+  ]
+}

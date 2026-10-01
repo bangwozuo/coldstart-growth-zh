@@ -1,0 +1,56 @@
+{
+  "week": "2026-W40",
+  "ltv": 540,
+  "channels": [
+    {
+      "name": "Product Hunt Launch",
+      "spend": 0,
+      "impressions": 8000,
+      "clicks": 505,
+      "signups": 82,
+      "activated": 21,
+      "paying": 9,
+      "revenue": 1890
+    },
+    {
+      "name": "Reddit r/SideProject",
+      "spend": 0,
+      "impressions": 12000,
+      "clicks": 300,
+      "signups": 21,
+      "activated": 4,
+      "paying": 1,
+      "revenue": 89
+    },
+    {
+      "name": "X buildinpublic",
+      "spend": 60,
+      "impressions": 30000,
+      "clicks": 600,
+      "signups": 54,
+      "activated": 16,
+      "paying": 5,
+      "revenue": 745
+    },
+    {
+      "name": "付费投放（测试）",
+      "spend": 900,
+      "impressions": 50000,
+      "clicks": 1500,
+      "signups": 96,
+      "activated": 17,
+      "paying": 4,
+      "revenue": 320
+    },
+    {
+      "name": "SEO 博客（自然）",
+      "spend": 120,
+      "impressions": 3500,
+      "clicks": 220,
+      "signups": 30,
+      "activated": 11,
+      "paying": 6,
+      "revenue": 1120
+    }
+  ]
+}

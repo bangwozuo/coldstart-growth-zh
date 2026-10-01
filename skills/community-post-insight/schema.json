@@ -1,0 +1,61 @@
+{
+  "skill_id": "de_dev_01_sk01",
+  "name": "社区热帖洞察",
+  "type": "atomic",
+  "input": {
+    "type": "object",
+    "required": ["source", "posts"],
+    "properties": {
+      "source": {
+        "type": "string",
+        "description": "数据来源：subreddit 名单 / 关键词（用于清单标注）"
+      },
+      "window_days": {
+        "type": "number",
+        "description": "时间窗口（天），默认 7"
+      },
+      "posts": {
+        "type": "array",
+        "description": "帖子列表（Reddit 官方 API 导出或人工粘贴），每条含 id/subreddit/title/ups/num_comments/age_hours/url"
+      }
+    }
+  },
+  "output": {
+    "type": "object",
+    "required": ["items", "summary"],
+    "properties": {
+      "items": {
+        "type": "array",
+        "description": "逐帖明细：类别 / 热度分 / 热度档 / 痛点主题 / 参与建议",
+        "items": {
+          "type": "object",
+          "properties": {
+            "帖子ID": {"type": "string"},
+            "subreddit": {"type": "string"},
+            "标题": {"type": "string"},
+            "类别": {"type": "string", "description": "痛点吐槽 / 功能求助 / 竞品流失 / 自推晒作 / 闲聊噪音"},
+            "热度分": {"type": "number"},
+            "热度档": {"type": "string"},
+            "痛点主题": {"type": "string"},
+            "参与建议": {"type": "string"}
+          }
+        }
+      },
+      "summary": {
+        "type": "object",
+        "description": "帖子总数 / 四类计数 / 可参与目标帖数 / 自推额度核算（9:1）/ 高频痛点主题"
+      },
+      "artifacts": {
+        "type": "array",
+        "description": "out/热帖洞察清单.xlsx、out/帖子类别分布.png、out/insight.json"
+      }
+    },
+    "x-scripts": ["scripts/insight_scan.py"]
+  },
+  "constraints": {
+    "max_input_length": 20000,
+    "forbidden_words": ["最好", "第一", "100%"],
+    "ai_label_required": true,
+    "human_review_required": true
+  }
+}

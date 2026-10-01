@@ -1,0 +1,47 @@
+{
+  "workflow_id": "de_dev_01_wf01",
+  "name": "每日选题挖掘",
+  "type": "composite",
+  "input": {
+    "type": "object",
+    "required": ["posts"],
+    "properties": {
+      "source": {"type": "string", "description": "来源标注（subreddit 名单/关键词）"},
+      "window_days": {"type": "number", "description": "时间窗口（天），默认 7"},
+      "posts": {
+        "type": "array",
+        "description": "帖子列表（Reddit 官方 API 导出或人工粘贴），每条含 id/subreddit/title/ups/num_comments/age_hours/url"
+      }
+    }
+  },
+  "output": {
+    "type": "object",
+    "required": ["topic_cards", "join_queue"],
+    "properties": {
+      "topic_cards": {
+        "type": "array",
+        "description": "入选选题卡：同主题 ≥3 帖，含证据链（帖子ID/sub/热度/URL）与五角度建议"
+      },
+      "watchlist": {
+        "type": "array",
+        "description": "观察池：不足 3 帖的主题，标注缺口（如 2/3）"
+      },
+      "join_queue": {
+        "type": "array",
+        "description": "参与队列：痛点/求助帖按热度降序，附参与方式与 9:1 额度结论"
+      },
+      "artifacts": {
+        "type": "array",
+        "description": "out/每日选题清单.xlsx、out/topic_mine_result.json、out/insight.json（上游产物）"
+      }
+    },
+    "x-scripts": ["scripts/run_flow.py"],
+    "x-orchestrates": ["de_dev_01_sk01", "de_dev_01_sk02"]
+  },
+  "constraints": {
+    "max_input_length": 20000,
+    "forbidden_words": ["最好", "第一", "100%"],
+    "ai_label_required": true,
+    "human_review_required": true
+  }
+}

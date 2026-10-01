@@ -1,0 +1,5 @@
+{
+  "content": "ChurnLens v0.9 上线：Stripe 同步开箱即用（实测接入 15 分钟）、周 cohort 视图、plain-English 流失报告（不用懂 SQL）。有用户第 2 周用它找回 3 个要流失的用户。定价 ¥39/月，前 100 名 ¥29。技术栈 Next.js + Supabase。",
+  "platforms": ["X/Twitter", "Reddit", "Product Hunt"],
+  "subreddit": "r/SideProject"
+}

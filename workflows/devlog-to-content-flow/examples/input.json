@@ -1,0 +1,12 @@
+{
+  "devlog": "本周重构了缓存层：引入 Redis 做二级缓存，页面平均响应时间从 8s 降到 2.1s，dashboard 首屏受益最明显。顺便把 CSV 导出改成了队列异步处理。周四凌晨出现一次缓存击穿把 DB 打满的事故，20 分钟后降级恢复。下周计划做 Webhook 重试机制。",
+  "metrics": {
+    "users": 47,
+    "mrr_cny": 312
+  },
+  "platforms": [
+    "X/Twitter",
+    "Reddit r/SideProject",
+    "Indie Hackers"
+  ]
+}

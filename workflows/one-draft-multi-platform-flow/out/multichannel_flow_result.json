@@ -1,0 +1,61 @@
+{
+  "summary": {
+    "母稿字数": 251,
+    "目标平台数": 3,
+    "标签平台数": 3,
+    "适配纪律": "同一母稿同源多形：信息点一条不丢一条不编；超标版本不出手",
+    "规则快照": "平台规格为 2026-Q3 快照，发布前以官方页面最新公示复核",
+    "说明": "规格矩阵引自 platform-format-adapt；标签组合来自 hashtag-optimize 实跑；成稿由模型按其 prompt 完成，发布前人工确认"
+  },
+  "specs": [
+    {
+      "平台": "X/Twitter",
+      "上限": "单帖 ≤280 字符；thread ≤7 条；标签 ≤3",
+      "结构": "一帖一点，首帖=钩子",
+      "调性": "朋友报信",
+      "自推合规": "允许",
+      "信息保真": "数字不改写不换算；砍字按 数字>场景>功能>形容词"
+    },
+    {
+      "平台": "Product Hunt",
+      "上限": "tagline ≤60 字符；5 图 + ≤60s demo",
+      "结构": "发布会式 + 首评自述",
+      "调性": "利益直给",
+      "自推合规": "允许（产品发布场景）",
+      "信息保真": "数字不改写不换算；砍字按 数字>场景>功能>形容词"
+    },
+    {
+      "平台": "小红书",
+      "上限": "标题 ≤20 字；正文 ≤1000 字；标签 ≤10",
+      "结构": "emoji 分段，前 2 行定完读",
+      "调性": "闺蜜安利",
+      "自推合规": "允许（软性）",
+      "信息保真": "数字不改写不换算；砍字按 数字>场景>功能>形容词"
+    }
+  ],
+  "tags": [
+    {
+      "平台": "X/Twitter",
+      "标签组合": "#buildinpublic #solofounder #churn",
+      "组合数": 3,
+      "排除数": 4,
+      "来源": "hashtag-optimize 实跑"
+    },
+    {
+      "平台": "Product Hunt",
+      "标签组合": "#buildinpublic #solofounder #stripe #churn #cohortanalysis",
+      "组合数": 5,
+      "排除数": 4,
+      "来源": "hashtag-optimize 实跑"
+    },
+    {
+      "平台": "小红书",
+      "标签组合": "#buildinpublic #startup #solofounder #stripe #churn #cohortanalysis",
+      "组合数": 6,
+      "排除数": 4,
+      "来源": "hashtag-optimize 实跑"
+    }
+  ],
+  "generated_at": "2026-09-30 17:20:32",
+  "note": "标签为 hashtag-optimize 实跑结果；成稿按 platform-format-adapt 的 prompt 完成"
+}

@@ -1,0 +1,52 @@
+{
+  "skill_id": "de_dev_01_sk06",
+  "name": "发布排期",
+  "type": "atomic",
+  "layer": "T4",
+  "input": {
+    "type": "object",
+    "required": ["items"],
+    "properties": {
+      "items": {
+        "type": "array",
+        "description": "待发布条目：标题 / 目标平台 / 内容形态 / 关联素材状态",
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": {"type": "string"},
+            "platforms": {"type": "array"},
+            "material_ready": {"type": "boolean"}
+          }
+        }
+      },
+      "week_start": {"type": "string", "description": "排期起始日，默认下周一"},
+      "audience_tz": {"type": "string", "description": "目标受众时区，默认 America/Los_Angeles"}
+    }
+  },
+  "output": {
+    "type": "object",
+    "required": ["schedule", "conflicts"],
+    "properties": {
+      "schedule": {
+        "type": "array",
+        "description": "周排期表：日期 / 时间(受众时区) / 平台 / 内容 / 前置条件 / 状态 / 人工确认点"
+      },
+      "conflicts": {
+        "type": "array",
+        "description": "冲突与处理：版本撞期 / 连发自推（同 sub 间隔≥3 天）/ 9:1 未达标 / 素材缺失"
+      },
+      "degraded_checks": {
+        "type": "array",
+        "description": "降级标注：只读连接器不可用时对应检查项标「未核对-降级」"
+      }
+    }
+  },
+  "constraints": {
+    "max_input_length": 8000,
+    "forbidden_words": ["最好", "第一", "100%"],
+    "ai_label_required": true,
+    "human_review_required": true,
+    "read_only_connectors": ["plausible-analytics", "reddit-api", "x-twitter-api"],
+    "no_platform_write": true
+  }
+}

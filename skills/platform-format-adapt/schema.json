@@ -1,0 +1,47 @@
+{
+  "skill_id": "de_dev_01_sk04",
+  "name": "平台格式适配",
+  "type": "atomic",
+  "input": {
+    "type": "object",
+    "required": ["content", "platforms"],
+    "properties": {
+      "content": {
+        "type": "string",
+        "description": "母稿（同源内容）"
+      },
+      "platforms": {
+        "type": "array",
+        "description": "目标平台列表：X/Twitter / Reddit / Product Hunt / 小红书 / Indie Hackers / dev.to"
+      },
+      "subreddit": {
+        "type": "string",
+        "description": "Reddit 目标 sub（决定自推合规检查）"
+      }
+    }
+  },
+  "output": {
+    "type": "object",
+    "required": ["adapted", "checklist"],
+    "properties": {
+      "info_points": {
+        "type": "array",
+        "description": "信息点清单：数字/事实/承诺，标 O 必保 / △ 可砍"
+      },
+      "adapted": {
+        "type": "array",
+        "description": "逐平台成稿（X thread 条数与首帖字数 / Reddit 标题与正文字数 / PH tagline 字数等，均带实测值）"
+      },
+      "checklist": {
+        "type": "array",
+        "description": "逐平台规格核对表：字数/结构/调性/合规/结论，超标回炉"
+      }
+    }
+  },
+  "constraints": {
+    "max_input_length": 8000,
+    "forbidden_words": ["最好", "第一", "100%"],
+    "ai_label_required": true,
+    "human_review_required": true
+  }
+}

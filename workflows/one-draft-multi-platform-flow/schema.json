@@ -1,0 +1,46 @@
+{
+  "workflow_id": "de_dev_01_wf03",
+  "name": "一稿多平台适配",
+  "type": "composite",
+  "input": {
+    "type": "object",
+    "required": ["content", "platforms"],
+    "properties": {
+      "content": {"type": "string", "description": "确认后的母稿（同源内容唯一事实源）"},
+      "platforms": {
+        "type": "array",
+        "description": "目标平台：X/Twitter / Product Hunt / 小红书 / Reddit / Indie Hackers / TikTok / Instagram"
+      },
+      "tag_pool": {
+        "type": "array",
+        "description": "候选标签快照（tag/posts_per_week/avg_engagement），供 hashtag-optimize 打分"
+      }
+    }
+  },
+  "output": {
+    "type": "object",
+    "required": ["specs", "tags"],
+    "properties": {
+      "specs": {
+        "type": "array",
+        "description": "逐平台规格核对表：上限 / 结构 / 调性 / 自推合规（硬字段）/ 信息保真纪律"
+      },
+      "tags": {
+        "type": "array",
+        "description": "逐平台标签组合（hashtag-optimize 实跑，组合随平台上限变化）与排除数"
+      },
+      "artifacts": {
+        "type": "array",
+        "description": "out/一稿多平台适配工单.xlsx、out/multichannel_flow_result.json、out/tags_*.json（各平台）"
+      }
+    },
+    "x-scripts": ["scripts/run_flow.py"],
+    "x-orchestrates": ["de_dev_01_sk04", "de_dev_01_sk05"]
+  },
+  "constraints": {
+    "max_input_length": 10000,
+    "forbidden_words": ["最好", "第一", "100%"],
+    "ai_label_required": true,
+    "human_review_required": true
+  }
+}

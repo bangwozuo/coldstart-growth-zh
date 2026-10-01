@@ -1,0 +1,9 @@
+{
+  "brief": "ChurnLens：给独立开发者的流失分析 SaaS。功能：Stripe 同步开箱即用（实测接入 15 分钟）、周 cohort 视图、plain-English 流失报告（不用懂 SQL）。实测数据：接入 15 分钟，某用户第 2 周 idled-user 提醒找回 3 个流失前兆用户。",
+  "painpoints": [
+    "Struggling with churn - users sign up, never come back after day 3. What am I doing wrong?",
+    "Is there a tool that turns Stripe invoices into a simple monthly P&L? Would pay for this",
+    "Anyone else hate configuring webhooks? Spent 5 hours debugging one today"
+  ],
+  "platform": "Reddit 评论"
+}
