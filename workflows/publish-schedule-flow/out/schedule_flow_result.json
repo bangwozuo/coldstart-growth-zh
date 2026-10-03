@@ -80,6 +80,6 @@
       "处理": "Reddit 帖不放 PH 链接、不发求投票内容（刷 upvote 红线）；两内容主题错开"
     }
   ],
-  "generated_at": "2026-10-03 08:28:04",
+  "generated_at": "2026-10-03 20:45:35",
   "note": "排期规则引自 publish-schedule（de_dev_01_sk06）；格式核对结论依赖 platform-format-adapt"
 }
