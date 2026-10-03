@@ -3,9 +3,13 @@
 > **产品冷启动期的"增长合伙人"：替你想清楚今天在哪个社区、对谁、说什么话**
 
 [![Stage](https://img.shields.io/badge/stage-P0-orange)](https://github.com/bangwozuo)
-[![Asset](https://img.shields.io/badge/asset-prompt--only-blueviolet)](#资产形态)
+[![Asset](https://img.shields.io/badge/asset-prompt%20%2B%20scripts-blueviolet)](#资产形态)
 [![NoKey](https://img.shields.io/badge/API%20Key-not%20required-success)](#资产形态)
 [![License](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
+
+![演示](docs/demo.mp4)
+
+*20 秒实跑演示：社区热帖洞察 → 每日选题挖掘 → 一稿多平台适配 → 发布排期 → 数据驱动选题迭代（均为 `--demo` 真实执行截图串连，非摆拍）。*
 
 ---
 
@@ -23,17 +27,46 @@
 
 ---
 
-## 资产形态
+## 数字员工总览
 
-**纯提示词资产** —— 这是理解本仓库的关键：
+| 项目 | 内容 |
+|------|------|
+| 身份 | 出海增长官——产品冷启动期的「增长合伙人」，替你想清楚今天在哪个社区、对谁、说什么话 |
+| 边界 | 只做选题/改写/排期/复盘的筛选与决策建议；不代刷量、不做付费投放执行、不代发帖（所有对外发布人工执行） |
+| KPI | 周均内容产出 ≥5 条；目标社区月均曝光与 Profile 访问环比 +20%；冷启动期官网月均自然访问增量 |
+| 资产形态 | 深度提示词 + 确定性 Python 脚本（无模型调用依赖、无 API Key、无平台写权限） |
+| 交付纪律 | 所有输出 AI 辅助生成、人工审核后使用；数值以脚本输出为准 |
+
+---
+
+## 资产形态
 
 | 特性 | 说明 |
 |------|------|
 | ✅ 无需 API Key | 一个 Key 都不需要 |
-| ✅ 无需部署 | 没有服务端，没有脚本 |
-| ✅ 无需依赖 | 克隆后用文本编辑器就能看 |
-| ✅ 平台无关 | 粘贴到任何 AI 工具即可使用 |
+| ✅ 无需部署 | 提示词资产粘贴即用；脚本资产本地跑，产物落盘 Excel/PNG/JSON |
+| ✅ 平台无关 | 提示词粘贴到任何 AI 工具；脚本只依赖 Python + openpyxl |
 | ✅ 用户自备算力 | 模型来自你自己的订阅 |
+| ✅ 确定性部分可复算 | 分类/打分/排期由脚本完成，可复算复核；语境判断由模型按 prompt 复核 |
+
+---
+
+## 资产矩阵（7 技能 + 5 工作流）
+
+| # | 资产 | 一句话 | 类型 | README |
+|---|------|--------|------|--------|
+| 1 | 社区热帖洞察 | 热帖四分类 + 热度分档 + 9:1 额度核算，输出洞察清单与类别分布图 | T1 脚本型 | [README](skills/community-post-insight/README.md) |
+| 2 | 痛点卖点匹配 | 痛点×功能配对，五角度钩子候选逐条过量化自检，错配如实弃用 | T2 提示词 | [README](skills/painpoint-sellingpoint-match/README.md) |
+| 3 | 叙事改写 | devlog 五段式改写为 build-in-public 故事，数据诚实规则保命 | T2 提示词 | [README](skills/narrative-rewrite/README.md) |
+| 4 | 平台格式适配 | 一篇母稿改 N 平台合格版本：硬规格表 + 信息保真 + 四步工作法 | T2 提示词 | [README](skills/platform-format-adapt/README.md) |
+| 5 | 话题标签优化 | 6 平台上限 + 大中小三层配比 + 适配分公式，零相关重罚排除 | T1 脚本型 | [README](skills/hashtag-optimize/README.md) |
+| 6 | 发布排期 | 4 平台时间轴规则 + 发布前五项检查 + 三类人工确认点 | T4 SOP | [README](skills/publish-schedule/README.md) |
+| 7 | 周度数据复盘 | 渠道归因 + 漏斗基准体检 + CAC<LTV/3 判定，输出留/停决策表 | T1 脚本型 | [README](skills/weekly-data-review/README.md) |
+| 8 | 每日选题挖掘 | 13 帖 → 选题卡 / 观察池 / 参与队列三张清单（每日 8:00） | T3 工作流 | [README](workflows/daily-topic-mine-flow/README.md) |
+| 9 | 开发日志转内容 | devlog 过 6 项门槛 → 钩子角度 + 五段式叙事改写工单 | T3 工作流 | [README](workflows/devlog-to-content-flow/README.md) |
+| 10 | 一稿多平台适配 | 母稿确认后一次铺多平台：规格工单 + 逐平台标签组合实跑 | T3 工作流 | [README](workflows/one-draft-multi-platform-flow/README.md) |
+| 11 | 发布排期（工作流） | 待发布清单 → 三态周排期表（可执行/待备料/拒绝排入） | T3 工作流 | [README](workflows/publish-schedule-flow/README.md) |
+| 12 | 数据驱动选题迭代 | 本周数据 → 渠道留/停 → 在跑选题加权/暂缓/降权 → 下周计划 | T3 工作流 | [README](workflows/data-driven-topic-iterate-flow/README.md) |
 
 ---
 
@@ -101,30 +134,6 @@ coldstart-growth-zh/
 | [示例库](docs/05-examples.md) | 7 组输入输出示例 |
 | [录像脚本](docs/06-recording-script.md) | 7 镜头分镜 + 旁白稿 |
 | [校验报告](docs/07-test-report.md) | 资产质量校验结果 |
-
----
-
-## 技能清单（7 个）
-
-| # | 技能 | 能力族 | 复杂度 | 提示词 | 文档 |
-|---|------|--------|--------|--------|------|
-| 1 | 社区热帖洞察 | 数据采集 | `M` | [prompt.txt](skills/community-post-insight/prompt.txt) | [docs](skills/community-post-insight/docs/) |
-| 2 | 痛点卖点匹配 | 选题创意 | `S` | [prompt.txt](skills/painpoint-sellingpoint-match/prompt.txt) | [docs](skills/painpoint-sellingpoint-match/docs/) |
-| 3 | 叙事改写 | 改写适配 | `S` | [prompt.txt](skills/narrative-rewrite/prompt.txt) | [docs](skills/narrative-rewrite/docs/) |
-| 4 | 平台格式适配 | 改写适配 | `S` | [prompt.txt](skills/platform-format-adapt/prompt.txt) | [docs](skills/platform-format-adapt/docs/) |
-| 5 | 话题标签优化 | 标签话题 | `S` | [prompt.txt](skills/hashtag-optimize/prompt.txt) | [docs](skills/hashtag-optimize/docs/) |
-| 6 | 发布排期 | 排期调度 | `S` | [prompt.txt](skills/publish-schedule/prompt.txt) | [docs](skills/publish-schedule/docs/) |
-| 7 | 周度数据复盘 | 分析诊断 | `M` | [prompt.txt](skills/weekly-data-review/prompt.txt) | [docs](skills/weekly-data-review/docs/) |
-
-## 工作流清单（5 条）
-
-| # | 工作流 | 阶段 | 复杂度 | 触发 | 定义 | 文档 |
-|---|--------|------|--------|------|------|------|
-| 1 | 每日选题挖掘 | `P0` | `M` | 定时（每日 8:00） | [SKILL.md](workflows/daily-topic-mine-flow/SKILL.md) | [docs](workflows/daily-topic-mine-flow/docs/) |
-| 2 | 开发日志转内容 | `P0` | `S` | 人工（提交 commit 摘要/日志） | [SKILL.md](workflows/devlog-to-content-flow/SKILL.md) | [docs](workflows/devlog-to-content-flow/docs/) |
-| 3 | 一稿多平台适配 | `P0` | `S` | 事件（主稿确认后） | [SKILL.md](workflows/one-draft-multi-platform-flow/SKILL.md) | [docs](workflows/one-draft-multi-platform-flow/docs/) |
-| 4 | 发布排期 | `P1` | `M` | 定时 | [SKILL.md](workflows/publish-schedule-flow/SKILL.md) | [docs](workflows/publish-schedule-flow/docs/) |
-| 5 | 数据驱动选题迭代 | `P1` | `M` | 定时（每周） | [SKILL.md](workflows/data-driven-topic-iterate-flow/SKILL.md) | [docs](workflows/data-driven-topic-iterate-flow/docs/) |
 
 ---
 
