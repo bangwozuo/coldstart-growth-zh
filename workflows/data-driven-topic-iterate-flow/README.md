@@ -7,6 +7,8 @@
 
 ![真实执行](docs/assets/run-terminal.png)
 
+![演示视频](docs/assets/demo.mp4)
+
 *上图来自真实执行：2026-W40 复盘判定保留 4 渠道 / 停投「付费投放（测试）」，5 个在跑选题更新为加权 3 / 暂缓 1 / 降权 1，整体 CAC ¥43.2，产物落盘 Excel + JSON。*
 
 ---

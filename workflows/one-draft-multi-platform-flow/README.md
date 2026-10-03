@@ -7,6 +7,8 @@
 
 ![真实执行](docs/assets/run-terminal.png)
 
+![演示视频](docs/assets/demo.mp4)
+
 *上图来自真实执行：母稿 251 字适配 3 平台（X/Twitter、Product Hunt、小红书），规格核对表 3 平台全过、hashtag-optimize 实跑 3 平台标签组合，产物落盘 Excel + 逐平台 tags JSON。*
 
 ---

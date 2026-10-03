@@ -7,6 +7,8 @@
 
 ![输出预览 · 实跑产物](docs/assets/run-terminal.png)
 
+![演示视频](docs/assets/demo.mp4)
+
 *上图来自 `examples/output.md` 实跑产物：3 条痛点配对判定 2✅ 1❌（错配弃用），产出 5 个角度的钩子候选并逐条自检，另有 3 条弃用钩子附原因。*
 
 ---

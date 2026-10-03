@@ -1,5 +1,33 @@
 # 截图与录屏
 
+> 以下素材均来自**真实执行**：`--run` 实拍终端 / 实跑产物文件，无摆拍。
+
+## 演示视频
+
+![演示视频](assets/demo.mp4)
+
+*第二帧为实跑产物图表*
+
+## 执行截图
+
+![真实执行](assets/run-terminal.png)
+
+## 实跑产物
+
+| 文件 | 说明 |
+|---|---|
+| [`out/_demo_input.json`](out/_demo_input.json) | 结构化结果（实跑生成） · 2 KB |
+| [`out/review.json`](out/review.json) | 结构化结果（实跑生成） · 6 KB |
+| [`out/topic_iterate_result.json`](out/topic_iterate_result.json) | 结构化结果（实跑生成） · 5 KB |
+| [`out/周度复盘报告.xlsx`](out/周度复盘报告.xlsx) | Excel 工作簿（实跑生成） · 10 KB |
+| [`out/复盘与选题迭代清单.xlsx`](out/复盘与选题迭代清单.xlsx) | Excel 工作簿（实跑生成） · 10 KB |
+| [`out/渠道漏斗对比.png`](out/渠道漏斗对比.png) | 图表产物（实跑生成） · 37 KB |
+
+
+---
+
+## 附录：实跑输出明细
+
 > 本资产为纯提示词客户端资产，无界面可截图。以下为**实跑运行效果**。
 
 ## 运行效果

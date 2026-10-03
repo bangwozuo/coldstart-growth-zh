@@ -7,6 +7,8 @@
 
 ![真实执行](docs/assets/run-terminal.png)
 
+![演示视频](docs/assets/demo.mp4)
+
 *上图来自真实执行：X/Twitter 平台 12 个候选标签，低相关排除 3 个，推荐组合 `#buildinpublic #microsaas #churn`（上限 3 = 大1:中1:小1），产物落盘 Excel + PNG + JSON。*
 
 ---

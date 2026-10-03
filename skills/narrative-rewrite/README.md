@@ -7,6 +7,8 @@
 
 ![输出预览 · 实跑产物](docs/assets/run-terminal.png)
 
+![演示视频](docs/assets/demo.mp4)
+
 *上图来自 `examples/output.md` 实跑产物：一篇 devlog 改写为 r/SideProject 版（正文 268 词），术语密度实测 1.1 个/百字，全部数字来自输入（47 用户 / MRR ¥312 / 8s→2.1s），6 项约束逐项核对通过。*
 
 ---

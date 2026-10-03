@@ -7,6 +7,8 @@
 
 ![输出预览 · 实跑产物](docs/assets/run-terminal.png)
 
+![演示视频](docs/assets/demo.mp4)
+
 *上图来自 `examples/output.md` 实跑产物：一篇母稿适配 X（4 条 thread）/ Reddit（96 词）/ Product Hunt（tagline 41/60 字符）三平台，6 个信息点 5 保 1 砍，逐平台规格核对全部 ✅。*
 
 ---
