@@ -7,7 +7,7 @@
 
 ![真实执行](docs/assets/run-terminal.png)
 
-![演示视频](docs/assets/demo.mp4)
+🎬 **[▶ 观看演示视频](docs/assets/demo.mp4)** — 四幕创作叙事：业务钩子 → 真实执行 → 要点到成稿演变 → 交付物
 
 *上图来自真实执行：devlog 通过 6 项门槛检查（绝对词 0 处、失败细节保留）、钩子角度工单 3 角度、五段式叙事工单 3 平台 × 5 要素，结论「✅ 可成稿」，产物落盘 Excel + JSON。*
 

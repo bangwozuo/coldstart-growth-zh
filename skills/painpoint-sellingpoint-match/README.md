@@ -7,7 +7,7 @@
 
 ![输出预览 · 实跑产物](docs/assets/run-terminal.png)
 
-![演示视频](docs/assets/demo.mp4)
+🎬 **[▶ 观看演示视频](docs/assets/demo.mp4)** — 四幕创作叙事：业务钩子 → 真实执行 → 要点到成稿演变 → 交付物
 
 *上图来自 `examples/output.md` 实跑产物：3 条痛点配对判定 2✅ 1❌（错配弃用），产出 5 个角度的钩子候选并逐条自检，另有 3 条弃用钩子附原因。*
 

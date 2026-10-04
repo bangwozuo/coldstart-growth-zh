@@ -7,7 +7,7 @@
 
 ![输出预览 · 实跑产物](docs/assets/run-terminal.png)
 
-![演示视频](docs/assets/demo.mp4)
+🎬 **[▶ 观看演示视频](docs/assets/demo.mp4)** — 四幕流转叙事：业务钩子 → 真实执行 → 数据管线节点动画 → 交付物
 
 *上图来自 `examples/output.md` 实跑产物：2026-10-05 起一周排期，4 个发布动作排为 3 个「✅ 可执行」+ 1 个「⏳ 待备料」（PH 缺 demo 视频），PH 与 Reddit 邻日冲突按红线处理，2 项检查标注「未核对-降级」。*
 
