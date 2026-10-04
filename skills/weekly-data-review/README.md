@@ -7,7 +7,7 @@
 
 ![真实执行](docs/assets/run-terminal.png)
 
-🎬 **[▶ 观看演示视频](docs/assets/demo.mp4)** — 四幕数据叙事：业务钩子 → 真实执行 → 指标条形图生长 → 交付物
+🎬 **[▶ 观看演示视频（在线播放）](https://cdn.jsdelivr.net/gh/bangwozuo/coldstart-growth-zh@main/skills/weekly-data-review/docs/assets/demo.mp4) · [GitHub 页](https://github.com/bangwozuo/coldstart-growth-zh/blob/main/skills/weekly-data-review/docs/assets/demo.mp4)** — 四幕数据叙事：业务钩子 → 真实执行 → 指标条形图生长 → 交付物
 
 *上图来自真实执行：2026-W40 复盘 5 渠道（总花费 ¥1,080 / 总收入 ¥4,164），判定保留 4 渠道、停投「付费投放（测试）」（CAC ¥225 ≥ 判定线 ¥180），整体 CAC ¥43.2，产物落盘 Excel + PNG + JSON。*
 

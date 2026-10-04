@@ -7,9 +7,9 @@
 [![NoKey](https://img.shields.io/badge/API%20Key-not%20required-success)](#资产形态)
 [![License](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
 
-![演示](docs/assets/hero.gif)
+![演示](https://cdn.jsdelivr.net/gh/bangwozuo/coldstart-growth-zh@main/docs/assets/hero.gif)
 
-*▲ 实时演示（自动循环）· [▶ 观看完整版合集视频](docs/demo.mp4)*
+*▲ 实时演示（自动循环）· [▶ 观看完整版合集视频](https://cdn.jsdelivr.net/gh/bangwozuo/coldstart-growth-zh@main/docs/demo.mp4)*
 
 *20 秒实跑演示：社区热帖洞察 → 每日选题挖掘 → 一稿多平台适配 → 发布排期 → 数据驱动选题迭代（均为 `--demo` 真实执行截图串连，非摆拍）。*
 

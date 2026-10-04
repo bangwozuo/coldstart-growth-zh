@@ -7,7 +7,7 @@
 
 ![输出预览 · 实跑产物](docs/assets/run-terminal.png)
 
-🎬 **[▶ 观看演示视频](docs/assets/demo.mp4)** — 四幕创作叙事：业务钩子 → 真实执行 → 要点到成稿演变 → 交付物
+🎬 **[▶ 观看演示视频（在线播放）](https://cdn.jsdelivr.net/gh/bangwozuo/coldstart-growth-zh@main/skills/narrative-rewrite/docs/assets/demo.mp4) · [GitHub 页](https://github.com/bangwozuo/coldstart-growth-zh/blob/main/skills/narrative-rewrite/docs/assets/demo.mp4)** — 四幕创作叙事：业务钩子 → 真实执行 → 要点到成稿演变 → 交付物
 
 *上图来自 `examples/output.md` 实跑产物：一篇 devlog 改写为 r/SideProject 版（正文 268 词），术语密度实测 1.1 个/百字，全部数字来自输入（47 用户 / MRR ¥312 / 8s→2.1s），6 项约束逐项核对通过。*
 
