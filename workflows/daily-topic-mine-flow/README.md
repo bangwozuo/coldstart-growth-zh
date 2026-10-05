@@ -7,7 +7,9 @@
 
 ![真实执行](docs/assets/run-terminal.png)
 
-🎬 **[▶ 观看演示视频（在线播放）](https://cdn.jsdelivr.net/gh/bangwozuo/coldstart-growth-zh@main/workflows/daily-topic-mine-flow/docs/assets/demo.mp4) · [GitHub 页](https://github.com/bangwozuo/coldstart-growth-zh/blob/main/workflows/daily-topic-mine-flow/docs/assets/demo.mp4)** — 四幕创作叙事：业务钩子 → 真实执行 → 要点到成稿演变 → 交付物
+![演示](https://cdn.jsdelivr.net/gh/bangwozuo/coldstart-growth-zh@main/workflows/daily-topic-mine-flow/docs/assets/demo.gif)
+
+🎬 **[▶ 观看高清完整版（mp4）](https://cdn.jsdelivr.net/gh/bangwozuo/coldstart-growth-zh@main/workflows/daily-topic-mine-flow/docs/assets/demo.mp4)** — 四幕创作叙事：业务钩子 → 真实执行 → 要点到成稿演变 → 交付物
 
 *上图来自真实执行：13 帖四分类为痛点 6 / 求助 2 / 流失 2 / 自推 2 / 噪音 1，产出选题卡 1 张（上手门槛 3 帖达标）、观察池 4 个主题（标注缺口 2/3、1/3）、可参与 8 帖，产物落盘 Excel + JSON。*
 

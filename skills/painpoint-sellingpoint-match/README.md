@@ -7,7 +7,9 @@
 
 ![输出预览 · 实跑产物](docs/assets/run-terminal.png)
 
-🎬 **[▶ 观看演示视频（在线播放）](https://cdn.jsdelivr.net/gh/bangwozuo/coldstart-growth-zh@main/skills/painpoint-sellingpoint-match/docs/assets/demo.mp4) · [GitHub 页](https://github.com/bangwozuo/coldstart-growth-zh/blob/main/skills/painpoint-sellingpoint-match/docs/assets/demo.mp4)** — 四幕创作叙事：业务钩子 → 真实执行 → 要点到成稿演变 → 交付物
+![演示](https://cdn.jsdelivr.net/gh/bangwozuo/coldstart-growth-zh@main/skills/painpoint-sellingpoint-match/docs/assets/demo.gif)
+
+🎬 **[▶ 观看高清完整版（mp4）](https://cdn.jsdelivr.net/gh/bangwozuo/coldstart-growth-zh@main/skills/painpoint-sellingpoint-match/docs/assets/demo.mp4)** — 四幕创作叙事：业务钩子 → 真实执行 → 要点到成稿演变 → 交付物
 
 *上图来自 `examples/output.md` 实跑产物：3 条痛点配对判定 2✅ 1❌（错配弃用），产出 5 个角度的钩子候选并逐条自检，另有 3 条弃用钩子附原因。*
 
