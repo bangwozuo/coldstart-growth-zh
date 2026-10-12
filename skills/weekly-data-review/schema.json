@@ -4,24 +4,50 @@
   "type": "atomic",
   "input": {
     "type": "object",
-    "required": ["week", "ltv", "channels"],
+    "required": [
+      "week",
+      "ltv",
+      "channels"
+    ],
     "properties": {
-      "week": {"type": "string", "description": "复盘周，如 2026-W40"},
-      "ltv": {"type": "number", "description": "用户 LTV（¥）；估算须注明口径，缺失时脚本拒绝执行"},
+      "week": {
+        "type": "string",
+        "description": "复盘周，如 2026-W40"
+      },
+      "ltv": {
+        "type": "number",
+        "description": "用户 LTV（¥）；估算须注明口径，缺失时脚本拒绝执行"
+      },
       "channels": {
         "type": "array",
         "description": "渠道列表（UTM/引荐域归因后），每条含 name/spend/impressions/clicks/signups/activated/paying/revenue",
         "items": {
           "type": "object",
           "properties": {
-            "name": {"type": "string"},
-            "spend": {"type": "number"},
-            "impressions": {"type": "number"},
-            "clicks": {"type": "number"},
-            "signups": {"type": "number"},
-            "activated": {"type": "number"},
-            "paying": {"type": "number"},
-            "revenue": {"type": "number"}
+            "name": {
+              "type": "string"
+            },
+            "spend": {
+              "type": "number"
+            },
+            "impressions": {
+              "type": "number"
+            },
+            "clicks": {
+              "type": "number"
+            },
+            "signups": {
+              "type": "number"
+            },
+            "activated": {
+              "type": "number"
+            },
+            "paying": {
+              "type": "number"
+            },
+            "revenue": {
+              "type": "number"
+            }
           }
         }
       }
@@ -29,7 +55,10 @@
   },
   "output": {
     "type": "object",
-    "required": ["channels", "summary"],
+    "required": [
+      "channels",
+      "summary"
+    ],
     "properties": {
       "channels": {
         "type": "array",
@@ -52,12 +81,19 @@
         "description": "out/周度复盘报告.xlsx、out/渠道漏斗对比.png、out/review.json"
       }
     },
-    "x-scripts": ["scripts/weekly_review.py"]
+    "x-scripts": [
+      "scripts/weekly_review.py"
+    ]
   },
   "constraints": {
     "max_input_length": 10000,
-    "forbidden_words": ["最好", "第一", "100%"],
+    "forbidden_words": [
+      "最好",
+      "第一",
+      "100%"
+    ],
     "ai_label_required": true,
-    "human_review_required": true
+    "human_review_required": true,
+    "external_api_required": false
   }
 }

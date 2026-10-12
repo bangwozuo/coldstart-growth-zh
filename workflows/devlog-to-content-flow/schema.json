@@ -1,12 +1,18 @@
 {
+  "skill_id": "devlog-to-content-flow",
   "workflow_id": "de_dev_01_wf02",
   "name": "开发日志转内容",
   "type": "composite",
   "input": {
     "type": "object",
-    "required": ["devlog"],
+    "required": [
+      "devlog"
+    ],
     "properties": {
-      "devlog": {"type": "string", "description": "开发日志原文（技术视角）"},
+      "devlog": {
+        "type": "string",
+        "description": "开发日志原文（技术视角）"
+      },
       "metrics": {
         "type": "object",
         "description": "本周真实数据（用户数/MRR/星标）；成稿仅允许出现日志原文与 metrics 中的数字"
@@ -19,7 +25,10 @@
   },
   "output": {
     "type": "object",
-    "required": ["checks", "platform_specs"],
+    "required": [
+      "checks",
+      "platform_specs"
+    ],
     "properties": {
       "checks": {
         "type": "array",
@@ -38,13 +47,23 @@
         "description": "out/devlog叙事改写工单.xlsx、out/devlog_flow_result.json"
       }
     },
-    "x-scripts": ["scripts/run_flow.py"],
-    "x-orchestrates": ["de_dev_01_sk02", "de_dev_01_sk03"]
+    "x-scripts": [
+      "scripts/run_flow.py"
+    ],
+    "x-orchestrates": [
+      "de_dev_01_sk02",
+      "de_dev_01_sk03"
+    ]
   },
   "constraints": {
     "max_input_length": 8000,
-    "forbidden_words": ["最好", "第一", "100%"],
+    "forbidden_words": [
+      "最好",
+      "第一",
+      "100%"
+    ],
     "ai_label_required": true,
-    "human_review_required": true
+    "human_review_required": true,
+    "external_api_required": false
   }
 }

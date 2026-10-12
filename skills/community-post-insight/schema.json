@@ -4,7 +4,10 @@
   "type": "atomic",
   "input": {
     "type": "object",
-    "required": ["source", "posts"],
+    "required": [
+      "source",
+      "posts"
+    ],
     "properties": {
       "source": {
         "type": "string",
@@ -22,7 +25,10 @@
   },
   "output": {
     "type": "object",
-    "required": ["items", "summary"],
+    "required": [
+      "items",
+      "summary"
+    ],
     "properties": {
       "items": {
         "type": "array",
@@ -30,14 +36,31 @@
         "items": {
           "type": "object",
           "properties": {
-            "帖子ID": {"type": "string"},
-            "subreddit": {"type": "string"},
-            "标题": {"type": "string"},
-            "类别": {"type": "string", "description": "痛点吐槽 / 功能求助 / 竞品流失 / 自推晒作 / 闲聊噪音"},
-            "热度分": {"type": "number"},
-            "热度档": {"type": "string"},
-            "痛点主题": {"type": "string"},
-            "参与建议": {"type": "string"}
+            "帖子ID": {
+              "type": "string"
+            },
+            "subreddit": {
+              "type": "string"
+            },
+            "标题": {
+              "type": "string"
+            },
+            "类别": {
+              "type": "string",
+              "description": "痛点吐槽 / 功能求助 / 竞品流失 / 自推晒作 / 闲聊噪音"
+            },
+            "热度分": {
+              "type": "number"
+            },
+            "热度档": {
+              "type": "string"
+            },
+            "痛点主题": {
+              "type": "string"
+            },
+            "参与建议": {
+              "type": "string"
+            }
           }
         }
       },
@@ -50,12 +73,19 @@
         "description": "out/热帖洞察清单.xlsx、out/帖子类别分布.png、out/insight.json"
       }
     },
-    "x-scripts": ["scripts/insight_scan.py"]
+    "x-scripts": [
+      "scripts/insight_scan.py"
+    ]
   },
   "constraints": {
     "max_input_length": 20000,
-    "forbidden_words": ["最好", "第一", "100%"],
+    "forbidden_words": [
+      "最好",
+      "第一",
+      "100%"
+    ],
     "ai_label_required": true,
-    "human_review_required": true
+    "human_review_required": true,
+    "external_api_required": false
   }
 }

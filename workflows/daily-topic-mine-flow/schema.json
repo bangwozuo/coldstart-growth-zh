@@ -1,13 +1,22 @@
 {
+  "skill_id": "daily-topic-mine-flow",
   "workflow_id": "de_dev_01_wf01",
   "name": "每日选题挖掘",
   "type": "composite",
   "input": {
     "type": "object",
-    "required": ["posts"],
+    "required": [
+      "posts"
+    ],
     "properties": {
-      "source": {"type": "string", "description": "来源标注（subreddit 名单/关键词）"},
-      "window_days": {"type": "number", "description": "时间窗口（天），默认 7"},
+      "source": {
+        "type": "string",
+        "description": "来源标注（subreddit 名单/关键词）"
+      },
+      "window_days": {
+        "type": "number",
+        "description": "时间窗口（天），默认 7"
+      },
       "posts": {
         "type": "array",
         "description": "帖子列表（Reddit 官方 API 导出或人工粘贴），每条含 id/subreddit/title/ups/num_comments/age_hours/url"
@@ -16,7 +25,10 @@
   },
   "output": {
     "type": "object",
-    "required": ["topic_cards", "join_queue"],
+    "required": [
+      "topic_cards",
+      "join_queue"
+    ],
     "properties": {
       "topic_cards": {
         "type": "array",
@@ -35,13 +47,23 @@
         "description": "out/每日选题清单.xlsx、out/topic_mine_result.json、out/insight.json（上游产物）"
       }
     },
-    "x-scripts": ["scripts/run_flow.py"],
-    "x-orchestrates": ["de_dev_01_sk01", "de_dev_01_sk02"]
+    "x-scripts": [
+      "scripts/run_flow.py"
+    ],
+    "x-orchestrates": [
+      "de_dev_01_sk01",
+      "de_dev_01_sk02"
+    ]
   },
   "constraints": {
     "max_input_length": 20000,
-    "forbidden_words": ["最好", "第一", "100%"],
+    "forbidden_words": [
+      "最好",
+      "第一",
+      "100%"
+    ],
     "ai_label_required": true,
-    "human_review_required": true
+    "human_review_required": true,
+    "external_api_required": false
   }
 }

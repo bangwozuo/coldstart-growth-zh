@@ -4,7 +4,11 @@
   "type": "atomic",
   "input": {
     "type": "object",
-    "required": ["platform", "content", "tag_pool"],
+    "required": [
+      "platform",
+      "content",
+      "tag_pool"
+    ],
     "properties": {
       "platform": {
         "type": "string",
@@ -20,9 +24,15 @@
         "items": {
           "type": "object",
           "properties": {
-            "tag": {"type": "string"},
-            "posts_per_week": {"type": "number"},
-            "avg_engagement": {"type": "number"}
+            "tag": {
+              "type": "string"
+            },
+            "posts_per_week": {
+              "type": "number"
+            },
+            "avg_engagement": {
+              "type": "number"
+            }
           }
         }
       }
@@ -30,7 +40,10 @@
   },
   "output": {
     "type": "object",
-    "required": ["combo", "evals"],
+    "required": [
+      "combo",
+      "evals"
+    ],
     "properties": {
       "combo": {
         "type": "array",
@@ -42,11 +55,22 @@
         "items": {
           "type": "object",
           "properties": {
-            "标签": {"type": "string"},
-            "层级": {"type": "string", "description": "大 ≥5000 / 中 500-5000 / 小 <500 帖/周"},
-            "相关度": {"type": "number"},
-            "适配分": {"type": "number"},
-            "判定": {"type": "string"}
+            "标签": {
+              "type": "string"
+            },
+            "层级": {
+              "type": "string",
+              "description": "大 ≥5000 / 中 500-5000 / 小 <500 帖/周"
+            },
+            "相关度": {
+              "type": "number"
+            },
+            "适配分": {
+              "type": "number"
+            },
+            "判定": {
+              "type": "string"
+            }
           }
         }
       },
@@ -55,12 +79,19 @@
         "description": "out/标签组合清单.xlsx、out/标签分数分布.png、out/tags.json"
       }
     },
-    "x-scripts": ["scripts/tag_score.py"]
+    "x-scripts": [
+      "scripts/tag_score.py"
+    ]
   },
   "constraints": {
     "max_input_length": 10000,
-    "forbidden_words": ["最好", "第一", "100%"],
+    "forbidden_words": [
+      "最好",
+      "第一",
+      "100%"
+    ],
     "ai_label_required": true,
-    "human_review_required": true
+    "human_review_required": true,
+    "external_api_required": false
   }
 }

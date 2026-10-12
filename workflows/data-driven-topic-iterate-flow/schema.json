@@ -1,13 +1,24 @@
 {
+  "skill_id": "data-driven-topic-iterate-flow",
   "workflow_id": "de_dev_01_wf05",
   "name": "数据驱动选题迭代",
   "type": "composite",
   "input": {
     "type": "object",
-    "required": ["week", "ltv", "channels"],
+    "required": [
+      "week",
+      "ltv",
+      "channels"
+    ],
     "properties": {
-      "week": {"type": "string", "description": "复盘周，如 2026-W40"},
-      "ltv": {"type": "number", "description": "用户 LTV（¥），估算须注明口径；缺失时上游拒绝执行"},
+      "week": {
+        "type": "string",
+        "description": "复盘周，如 2026-W40"
+      },
+      "ltv": {
+        "type": "number",
+        "description": "用户 LTV（¥），估算须注明口径；缺失时上游拒绝执行"
+      },
       "channels": {
         "type": "array",
         "description": "渠道数据（UTM 归因后）：name/spend/impressions/clicks/signups/activated/paying/revenue"
@@ -20,7 +31,10 @@
   },
   "output": {
     "type": "object",
-    "required": ["weights", "plan"],
+    "required": [
+      "weights",
+      "plan"
+    ],
     "properties": {
       "weights": {
         "type": "array",
@@ -35,13 +49,22 @@
         "description": "out/复盘与选题迭代清单.xlsx、out/topic_iterate_result.json、out/review.json（上游产物）"
       }
     },
-    "x-scripts": ["scripts/run_flow.py"],
-    "x-orchestrates": ["de_dev_01_sk07"]
+    "x-scripts": [
+      "scripts/run_flow.py"
+    ],
+    "x-orchestrates": [
+      "de_dev_01_sk07"
+    ]
   },
   "constraints": {
     "max_input_length": 10000,
-    "forbidden_words": ["最好", "第一", "100%"],
+    "forbidden_words": [
+      "最好",
+      "第一",
+      "100%"
+    ],
     "ai_label_required": true,
-    "human_review_required": true
+    "human_review_required": true,
+    "external_api_required": false
   }
 }

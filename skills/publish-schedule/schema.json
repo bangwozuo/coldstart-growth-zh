@@ -5,7 +5,9 @@
   "layer": "T4",
   "input": {
     "type": "object",
-    "required": ["items"],
+    "required": [
+      "items"
+    ],
     "properties": {
       "items": {
         "type": "array",
@@ -13,19 +15,34 @@
         "items": {
           "type": "object",
           "properties": {
-            "title": {"type": "string"},
-            "platforms": {"type": "array"},
-            "material_ready": {"type": "boolean"}
+            "title": {
+              "type": "string"
+            },
+            "platforms": {
+              "type": "array"
+            },
+            "material_ready": {
+              "type": "boolean"
+            }
           }
         }
       },
-      "week_start": {"type": "string", "description": "排期起始日，默认下周一"},
-      "audience_tz": {"type": "string", "description": "目标受众时区，默认 America/Los_Angeles"}
+      "week_start": {
+        "type": "string",
+        "description": "排期起始日，默认下周一"
+      },
+      "audience_tz": {
+        "type": "string",
+        "description": "目标受众时区，默认 America/Los_Angeles"
+      }
     }
   },
   "output": {
     "type": "object",
-    "required": ["schedule", "conflicts"],
+    "required": [
+      "schedule",
+      "conflicts"
+    ],
     "properties": {
       "schedule": {
         "type": "array",
@@ -43,10 +60,19 @@
   },
   "constraints": {
     "max_input_length": 8000,
-    "forbidden_words": ["最好", "第一", "100%"],
+    "forbidden_words": [
+      "最好",
+      "第一",
+      "100%"
+    ],
     "ai_label_required": true,
     "human_review_required": true,
-    "read_only_connectors": ["plausible-analytics", "reddit-api", "x-twitter-api"],
-    "no_platform_write": true
+    "read_only_connectors": [
+      "plausible-analytics",
+      "reddit-api",
+      "x-twitter-api"
+    ],
+    "no_platform_write": true,
+    "external_api_required": false
   }
 }
