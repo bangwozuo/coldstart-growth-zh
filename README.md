@@ -122,25 +122,25 @@ coldstart-growth-zh/
 
 ## 技能清单（7 个）
 
-| # | 技能 | 能力族 | 复杂度 | 提示词 | 文档 |
-|---|------|--------|--------|--------|------|
-| 1 | 社区热帖洞察 | 数据采集 | `M` | [prompt.txt](skills/community-post-insight/prompt.txt) | [docs](skills/community-post-insight/docs/) |
-| 2 | 痛点卖点匹配 | 钩子与创意生成 | `S` | [prompt.txt](skills/painpoint-sellingpoint-match/prompt.txt) | [docs](skills/painpoint-sellingpoint-match/docs/) |
-| 3 | 叙事改写 | 改写与适配 | `S` | [prompt.txt](skills/narrative-rewrite/prompt.txt) | [docs](skills/narrative-rewrite/docs/) |
-| 4 | 平台格式适配 | 改写与适配 | `S` | [prompt.txt](skills/platform-format-adapt/prompt.txt) | [docs](skills/platform-format-adapt/docs/) |
-| 5 | 话题标签优化 | 标签与话题 | `S` | [prompt.txt](skills/hashtag-optimize/prompt.txt) | [docs](skills/hashtag-optimize/docs/) |
-| 6 | 发布排期 | 排期与调度 | `S` | [prompt.txt](skills/publish-schedule/prompt.txt) | [docs](skills/publish-schedule/docs/) |
-| 7 | 周度数据复盘 | 归因诊断 | `M` | [prompt.txt](skills/weekly-data-review/prompt.txt) | [docs](skills/weekly-data-review/docs/) |
+| # | 技能 | 能力族 | 复杂度 | 说明文档 |
+|---|------|--------|--------|----------|
+| 1 | 社区热帖洞察 | 数据采集 | `M` | [README](skills/community-post-insight/README.md) |
+| 2 | 痛点卖点匹配 | 钩子与创意生成 | `S` | [README](skills/painpoint-sellingpoint-match/README.md) |
+| 3 | 叙事改写 | 改写与适配 | `S` | [README](skills/narrative-rewrite/README.md) |
+| 4 | 平台格式适配 | 改写与适配 | `S` | [README](skills/platform-format-adapt/README.md) |
+| 5 | 话题标签优化 | 标签与话题 | `S` | [README](skills/hashtag-optimize/README.md) |
+| 6 | 发布排期 | 排期与调度 | `S` | [README](skills/publish-schedule/README.md) |
+| 7 | 周度数据复盘 | 归因诊断 | `M` | [README](skills/weekly-data-review/README.md) |
 
 ## 工作流清单（5 条）
 
-| # | 工作流 | 阶段 | 复杂度 | 触发 | 定义 | 文档 |
-|---|--------|------|--------|------|------|------|
-| 1 | 每日选题挖掘 | `P0` | `M` | 定时（每日 8:00） | [SKILL.md](workflows/daily-topic-mine-flow/SKILL.md) | [docs](workflows/daily-topic-mine-flow/docs/) |
-| 2 | 开发日志转内容 | `P0` | `S` | 人工（提交 commit 摘要/日志） | [SKILL.md](workflows/devlog-to-content-flow/SKILL.md) | [docs](workflows/devlog-to-content-flow/docs/) |
-| 3 | 一稿多平台适配 | `P0` | `S` | 事件（主稿确认后） | [SKILL.md](workflows/one-draft-multi-platform-flow/SKILL.md) | [docs](workflows/one-draft-multi-platform-flow/docs/) |
-| 4 | 发布排期 | `P1` | `M` | 定时 | [SKILL.md](workflows/publish-schedule-flow/SKILL.md) | [docs](workflows/publish-schedule-flow/docs/) |
-| 5 | 数据驱动选题迭代 | `P1` | `M` | 定时（每周） | [SKILL.md](workflows/data-driven-topic-iterate-flow/SKILL.md) | [docs](workflows/data-driven-topic-iterate-flow/docs/) |
+| # | 工作流 | 阶段 | 复杂度 | 触发 | 说明文档 |
+|---|--------|------|--------|------|----------|
+| 1 | 每日选题挖掘 | `P0` | `M` | 定时（每日 8:00） | [README](workflows/daily-topic-mine-flow/README.md) |
+| 2 | 开发日志转内容 | `P0` | `S` | 人工（提交 commit 摘要/日志） | [README](workflows/devlog-to-content-flow/README.md) |
+| 3 | 一稿多平台适配 | `P0` | `S` | 事件（主稿确认后） | [README](workflows/one-draft-multi-platform-flow/README.md) |
+| 4 | 发布排期 | `P1` | `M` | 定时 | [README](workflows/publish-schedule-flow/README.md) |
+| 5 | 数据驱动选题迭代 | `P1` | `M` | 定时（每周） | [README](workflows/data-driven-topic-iterate-flow/README.md) |
 
 ---
 
